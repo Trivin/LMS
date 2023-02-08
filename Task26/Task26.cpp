@@ -87,7 +87,7 @@ int main()
         printf("Scorpio\n");
     else if (z>=1123 && z<=1221)
         printf("Capricorn\n");
-    else
+    else if (z>=1222 || z<=120)
         printf("Sheep");
 }
 

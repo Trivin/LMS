@@ -91,4 +91,4 @@ int main()
         printf("Sheep");
 }
 
-//https://github.com/Trivin/LMS.git
+// https://github.com/Trivin/LMS/blob/master/Task26/Task26.cpp

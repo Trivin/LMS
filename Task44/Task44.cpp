@@ -17,7 +17,7 @@ int main()
     int min = numbers[0];
     int max = numbers[0];
     int sum = 0;
-    long average;
+    float average;
     for (int i = 0; i < size; i++) 
     {
         if (min > numbers[i])
@@ -28,12 +28,12 @@ int main()
 
         sum = sum + numbers[i];        
     }
-    average = (long)sum / (long)size;
+    average = (float)sum / (float)size;
     
     printf("Min : %i\n", min);
     printf("Max : %i\n", max);
     printf("Sum : %i\n", sum);
-    printf("Average : %i", average);
+    printf("Average : %f", average);
 }
 
 //https://github.com/Trivin/LMS.git

@@ -18,11 +18,9 @@ void new_sqrt(int num, int *sqrt)
         if (i*i == num)
         {
             *sqrt = i;
-            return;
-        }
-        
+            break;
+        }       
     }
-    return;
 }
 
 void new_sqrt(int num, int &sqrt)
@@ -33,10 +31,9 @@ void new_sqrt(int num, int &sqrt)
         if (i*i == num)
         {
             sqrt = i;
-            return;
+            break;
         }
     }
-    return;
 }
 
 int main()

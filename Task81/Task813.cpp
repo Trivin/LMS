@@ -92,7 +92,7 @@ public:
 
     void chop(Person &enemy)
     {
-        cout << getName() << " chop " << enemy.getName() << std::endl;
+        cout << getName() << " chop " << enemy.getName() << endl;
         enemy.damaged(getWeapon(), getName());
     }
 
@@ -108,7 +108,7 @@ public:
 
     void bite(Player &player)
     {
-        cout << getName() << " bite " << player.getName() << std::endl;
+        cout << getName() << " bite " << player.getName() << endl;
         player.damaged(getWeapon()-player.getArmor(), getName());
     }
 };
@@ -121,9 +121,9 @@ void fight(Player &player, Creeper &enemy)
         if (enemy.getHitpoints() <= 0)
             break;
         enemy.bite(player);
-        cout << std::endl;
+        cout << endl;
     }
-    cout << std::endl;
+    cout << endl;
 };
 
 int main()
